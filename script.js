@@ -48,9 +48,6 @@ $(document).ready(function() {
     
     colorCode();
     
-    //Blank array of scheduled items
-    
-    
     //Get save button to save input field text to loc storage
     var storText = document.getElementById("schedule");
     $("#saveBtn").click(function (e) {
@@ -58,8 +55,8 @@ $(document).ready(function() {
         // Create variable to grab input text and push to array
         var schedItem = $(".toDo").get().map(function(el) {return el.value});
         console.log(schedItem);
-        //var schedInput = $(".toDo").val().trim();
-        //schedItem.push(schedInput);
+        // Save text to local storage
+        localStorage.setItem(schedule, JSON.stringify(schedItem));
 
     });
         
