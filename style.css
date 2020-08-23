@@ -38,8 +38,8 @@ body {
 }
 
 .hour {
-  background-color: #7a7171;
-  color: #000000;
+  background-color: #b1acac;
+  color: #f7f3f3;
   border-top: 1px dashed #000000;
   padding-top: 28px;
   font-weight: bold;
@@ -74,5 +74,10 @@ body {
 
 .schedHead {
   font-size: xx-large;
+}
+
+.saved {
+  color: #000000;
+  font-size: 18px;
 }
 

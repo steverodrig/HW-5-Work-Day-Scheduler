@@ -41,9 +41,9 @@ $(document).ready(function() {
                 $("#9 ,#10, #11, #12, #13, #14, #15").addClass("past");
                 $("#16").addClass("present");
             } else if (currHr < 9) {
-                $(".hour").addClass("future");
-            } else {
-                $(".hour").addClass("past");
+                $(".saved").addClass("future");
+            } else if (currHr > 16) {
+                $(".saved").addClass("past");
             }
     }; 
     
